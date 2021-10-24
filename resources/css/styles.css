@@ -35,6 +35,8 @@ main {
     top: 80px;
     width: 850px;
     transform: translate(calc(50vw - 50%));
+    height: calc(100% - 175px);
+    overflow-y: scroll;
 }
 section {
     margin-top: 20px;
@@ -53,6 +55,20 @@ section {
 .project {
     margin: 10px;
 }
+.project img {
+    width: 200px;
+    height: 200px;
+}
+.skill-desc table {
+    width: 100%;
+    text-align: center;
+}
+.skill-desc thead {
+    background-color: lightskyblue;
+}
+.skill-desc tbody {
+    background-color: lightcyan;
+}
 .contact-desc {
     display: flex;
     flex-direction: column;
@@ -63,4 +79,43 @@ section {
 }
 .detail img {
     margin: 0 10px;
+}
+
+footer {
+    position: absolute;
+    height: 90px;
+    bottom: 3px;
+    width: 850px;
+    transform: translate(calc(50vw - 50%));
+    background-color: lightgrey;
+}
+.mode {
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: right;
+}
+.mode input {
+    width: 40px;
+}
+.dark-theme {
+    background-color: rgb(27, 21, 21);
+    color: white;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 700px) {
+    body, header, main, footer {
+        width: 400px;
+    }
+    nav {
+        display: none;
+    }
+    .project {
+        width: 30%;
+    }
+    .project img {
+        width: 100px;
+        height: 100px;
+    }
 }

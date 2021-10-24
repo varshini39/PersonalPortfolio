@@ -37,23 +37,23 @@
                 <h2>Projects</h2>
                 <div class="desc">
                     <div class="project">
-                        <img src="./resources/images/gcal.png" alt="Google Calendar Sync" width="200px" height="200px">
+                        <img src="./resources/images/gcal.png" alt="Google Calendar Sync">
                         <h3>Google Calendar intergration</h3>
                     </div>
                     <div class="project">
-                        <img src="./resources/images/compiler.jpg" alt="Online Python Compiler" width="200px" height="200px">
+                        <img src="./resources/images/compiler.jpg" alt="Online Python Compiler">
                         <h3>Online Python Compiler</h3>
                     </div>
                     <div class="project">
-                        <img src="./resources/images/report.jpg" alt="Students Report Generation" width="200px" height="200px">
+                        <img src="./resources/images/report.jpg" alt="Students Report Generation">
                         <h3>Students' Report Generation</h3>
                     </div>
                     <div class="project">
-                        <img src="./resources/images/portfolio.png" alt="Personal Portfolio" width="200px" height="200px">
+                        <img src="./resources/images/portfolio.png" alt="Personal Portfolio">
                         <h3>Personal Portfolio</h3>
                     </div>
                     <div class="project">
-                        <img src="./resources/images/threepane.jpg" alt="Three pane view" width="200px" height="200px">
+                        <img src="./resources/images/threepane.jpg" alt="Three pane view">
                         <h3>Three pane flexible view of notes</h3>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
             <section id="skills">
                 <h2>Skills</h2>
                 <div class="skill-desc">
-                    <table>
+                    <table border="1px solid black">
                         <thead>
                             <tr>
                                 <th>Skill</th>
@@ -105,18 +105,26 @@
                         <p> Chennai, Tamil Nadu, India</p></span>
                     <span class="detail">
                         <img src="./resources/images/mobile.jpg" alt="Mobile" width="50px" height="50px">
-                        <p> +1 23293 43442</p>
+                        <p><a href="tel:+12329343442">+1 23293 43442</a></p>
                     </span>
                     <span class="detail">
                         <img src="./resources/images/email.png" alt="Email" width="50px" height="50px">
-                        <p> tweety@gmail.com</p>
+                        <p><a href="mailto:tweety@gmail.com">tweety@gmail.com</a></p>
                     </span>
                     <span class="detail">
                         <img src="./resources/images/linkedin.png" alt="Linked" width="50px" height="50px">
-                        <p> <a href="https://www.linkedin.com/us/tweety231/">Tweety Tune</a></p>
+                        <p><a href="https://www.linkedin.com/us/tweety231/">Tweety Tune</a></p>
                     </span>
                 </div>
             </section>
         </main>
+        <footer>
+            <div class="mode">
+                <h3>Change Layout Settings</h3>
+                <label>Light</label>
+                <input type="range" min="1" max="2" class="slider" id="MODE" name="MODE" value="1" onclick="javascript: changeTheme(this);">
+                <label>Dark</label>
+            </div>
+        </footer>
     </body>
 </html>
